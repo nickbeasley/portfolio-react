@@ -25,6 +25,10 @@ function ContactView() {
         <br />
       </div>
       <Form className="contact-form mx-auto">
+        <Form.Label className="contact-form-title">
+          Form under construction.. <br />
+          Please email me at email link above.
+        </Form.Label>
         <fieldset>
           <Form.Group controlId="formBasicFirstName">
             <Form.Label>First Name:</Form.Label>
