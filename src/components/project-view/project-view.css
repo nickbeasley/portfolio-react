@@ -1,0 +1,36 @@
+:root {
+  --black: #040404;
+  --dark-blue: #0443f2;
+  --light-blue: #53cbfb;
+  --gray: #cecece;
+  --white: #ffffff;
+}
+.project-header {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+}
+.project-ss {
+  padding: 10px;
+}
+.project-ss-mobile {
+  width: auto;
+  height: 200px;
+  padding: 10px;
+}
+.page-title {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+}
+
+.grid__item {
+  padding: 10px;
+}
+.project-button {
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}

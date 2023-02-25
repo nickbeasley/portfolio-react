@@ -1,0 +1,22 @@
+.contact-title {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+}
+.contact-info {
+  text-align: center;
+  color: var(--white);
+  padding: 10px;
+}
+.contact-form {
+  text-align: center;
+  color: var(--black);
+  background-color: var(--gray);
+  width: 50%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.submit {
+  margin: 10px;
+}

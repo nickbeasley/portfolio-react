@@ -1,0 +1,31 @@
+:root {
+  --black: #040404;
+  --dark-blue: #0443f2;
+  --light-blue: #53cbfb;
+  --gray: #cecece;
+  --white: #ffffff;
+}
+.logo {
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+}
+.navbar-item {
+  padding: 10px;
+  color: var(--white);
+}
+.navbar {
+  background-color: var(--black);
+}
+.navbar-item {
+  color: var(--white);
+}
+.navbar-item:hover {
+  color: var(--light-blue);
+}
+.navbar-item:active {
+  color: var(--dark-blue);
+}
+.navbar-item:visited {
+  color: var(--white);
+}

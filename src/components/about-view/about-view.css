@@ -1,0 +1,23 @@
+:root {
+  --black: #040404;
+  --dark-blue: #0443f2;
+  --light-blue: #53cbfb;
+  --gray: #cecece;
+  --white: #ffffff;
+}
+.skills-title {
+  text-align: center;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+}
+.skill-list {
+  font-size: 1em;
+  font-weight: bold;
+}
+.skill-box {
+  background-color: var(--gray);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}

@@ -1,0 +1,26 @@
+:root {
+  --black: #040404;
+  --dark-blue: #0443f2;
+  --light-blue: #53cbfb;
+  --gray: #cecece;
+}
+
+.profile-picture {
+  float: left;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+}
+
+.main-section {
+  background-color: var(--gray);
+  padding: 30px;
+  border-radius: 25px;
+}
+p.aboutme {
+  font-size: 1.5em;
+  text-align: center;
+}
+span {
+  padding: 5px;
+}
