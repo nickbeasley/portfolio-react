@@ -24,12 +24,7 @@ function ContactView() {
         <a href="tel:8124801651">Call (812)480-1651</a>
         <br />
       </div>
-      <Form
-        className="contact-form mx-auto"
-        name="contact"
-        method="POST"
-        data-netlify="true"
-      >
+      <Form className="contact-form mx-auto">
         <fieldset>
           <Form.Group controlId="formBasicFirstName">
             <Form.Label>First Name:</Form.Label>
