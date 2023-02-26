@@ -55,7 +55,7 @@ class ContactView extends React.Component {
           <form
             onSubmit={this.handleSubmit}
             id="contact-form"
-            name="contact"
+            name="Contact"
             method="POST"
             netlify
           >
