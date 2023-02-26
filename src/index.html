@@ -10,36 +10,22 @@
   </head>
   <body>
     <div class="app-container"></div>
-    <form
-      id="contact-form"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      netlify
-    >
-      <input type="hidden" name="contact" value="index.html" />
+    <form id="contact-form" name="contact" method="POST" netlify>
+      <input type="hidden" name="contact-form" value="index.html" />
       <fieldset>
         <legend>Contact Form</legend>
         <label class="contact-form__label" hidden> Contact Form </label>
         <input
-          type="text"
           className="form-item"
           required
-          placeholder="First
-        Name"
+          placeholder="First Name"
           name="firstName"
-          value="{firstName}"
-          onChange="{this.handleChange}"
         />
         <input
-          type="text"
           className="form-item"
           required
-          placeholder="Last
-        Name"
+          placeholder="Last Name"
           name="lastName"
-          value="{lastName}"
-          onChange="{this.handleChange}"
         />
         <input
           className="form-item"
