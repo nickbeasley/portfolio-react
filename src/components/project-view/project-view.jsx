@@ -6,6 +6,7 @@ import ToDoListPhoto from "../../images/ToDoListSS.png";
 import PokedexPhoto from "../../images/PokedexSS.png";
 import NixFlixPhoto from "../../images/NixFlixSS.png";
 import NixFlixServerPhoto from "../../images/NixFlixServerSS.png";
+import PortfolioPhoto from "../../images/PortfolioSS.png";
 import "./project-view.css";
 
 function ProjectView() {
@@ -37,6 +38,65 @@ function ProjectView() {
     <Container>
       <h1 className="page-title">Check out my projects!</h1>
       <Row xs={1} md={2} className="g-4">
+        <Col>
+          <Card className="grid__item">
+            <Card.Title className="project-header">
+              This React Portfolio site!
+            </Card.Title>
+            <Card.Img
+              src={PortfolioPhoto}
+              className="project-ss"
+              alt="portfolio app"
+            />
+            <div className="card-body">
+              <Card.Text>
+                This is the site that you are currently looking at. It was made
+                to replace the original portfolio site written in plain HTML and
+                CSS. This site created using React is much more advanced.
+              </Card.Text>
+              {projectDetails.Portfolio ? (
+                <>
+                  <ul>
+                    <li>React-based front-end portfolio website. </li>
+                    <li>
+                      Customized styling using CSS and CSS framework Bootstrap.
+                    </li>
+                    <li>
+                      Use of React features like props, state, and hooks to
+                      manage and display data dynamically.
+                    </li>
+                    <li>Use of React Router to create a multi-page website.</li>
+                    <li>
+                      Use of version control tool, GitHub, for project
+                      management and collaboration.
+                    </li>
+                  </ul>
+                  <Button
+                    className="project-button"
+                    href="https://github.com/nickbeasley/portfolio-react.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See the code here!
+                  </Button>
+                  <button
+                    onClick={() => hideDetails("Portfolio")}
+                    className="details-button"
+                  >
+                    Hide details
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => toggleDetails("Portfolio")}
+                  className="details-button"
+                >
+                  Show details
+                </button>
+              )}
+            </div>
+          </Card>
+        </Col>
         <Col>
           <Card className="grid__item">
             <Card.Title className="project-header">Pokedex!</Card.Title>
@@ -90,12 +150,18 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={() => hideDetails("Pokedex")}>
+                  <button
+                    onClick={() => hideDetails("Pokedex")}
+                    className="details-button"
+                  >
                     Hide details
                   </button>
                 </>
               ) : (
-                <button onClick={() => toggleDetails("Pokedex")}>
+                <button
+                  onClick={() => toggleDetails("Pokedex")}
+                  className="details-button"
+                >
                   Show details
                 </button>
               )}
@@ -143,12 +209,18 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={() => hideDetails("ToDoList")}>
+                  <button
+                    onClick={() => hideDetails("ToDoList")}
+                    className="details-button"
+                  >
                     Hide details
                   </button>
                 </>
               ) : (
-                <button onClick={() => toggleDetails("ToDoList")}>
+                <button
+                  onClick={() => toggleDetails("ToDoList")}
+                  className="details-button"
+                >
                   Show details
                 </button>
               )}
@@ -215,12 +287,18 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={() => hideDetails("MeetUp")}>
+                  <button
+                    onClick={() => hideDetails("MeetUp")}
+                    className="details-button"
+                  >
                     Hide details
                   </button>
                 </>
               ) : (
-                <button onClick={() => toggleDetails("MeetUp")}>
+                <button
+                  onClick={() => toggleDetails("MeetUp")}
+                  className="details-button"
+                >
                   Show details
                 </button>
               )}
@@ -281,12 +359,18 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={() => hideDetails("NixFlixServer")}>
+                  <button
+                    onClick={() => hideDetails("NixFlixServer")}
+                    className="details-button"
+                  >
                     Hide details
                   </button>
                 </>
               ) : (
-                <button onClick={() => toggleDetails("NixFlixServer")}>
+                <button
+                  onClick={() => toggleDetails("NixFlixServer")}
+                  className="details-button"
+                >
                   Show details
                 </button>
               )}
@@ -355,12 +439,18 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={() => hideDetails("NixFlix")}>
+                  <button
+                    onClick={() => hideDetails("NixFlix")}
+                    className="details-button"
+                  >
                     Hide details
                   </button>
                 </>
               ) : (
-                <button onClick={() => toggleDetails("NixFlix")}>
+                <button
+                  onClick={() => toggleDetails("NixFlix")}
+                  className="details-button"
+                >
                   Show details
                 </button>
               )}
@@ -423,56 +513,18 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={() => hideDetails("ChatApp")}>
-                    Hide details
-                  </button>
-                </>
-              ) : (
-                <button onClick={() => toggleDetails("ChatApp")}>
-                  Show details
-                </button>
-              )}
-            </div>
-          </Card>
-        </Col>
-        <Col>
-          <Card className="grid__item">
-            <Card.Title className="project-header">
-              This React Portfolio site!
-            </Card.Title>
-            <div className="card-body">
-              <Card.Text></Card.Text>
-              {projectDetails.Portfolio ? (
-                <>
-                  <ul>
-                    <li>React-based front-end portfolio website. </li>
-                    <li>
-                      Customized styling using CSS and CSS framework Bootstrap.
-                    </li>
-                    <li>
-                      Use of React features like props, state, and hooks to
-                      manage and display data dynamically.
-                    </li>
-                    <li>Use of React Router to create a multi-page website.</li>
-                    <li>
-                      Use of version control tool, GitHub, for project
-                      management and collaboration.
-                    </li>
-                  </ul>
-                  <Button
-                    className="project-button"
-                    href="https://github.com/nickbeasley/portfolio-react.git"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => hideDetails("ChatApp")}
+                    className="details-button"
                   >
-                    See the code here!
-                  </Button>
-                  <button onClick={() => hideDetails("Portfolio")}>
                     Hide details
                   </button>
                 </>
               ) : (
-                <button onClick={() => toggleDetails("Portfolio")}>
+                <button
+                  onClick={() => toggleDetails("ChatApp")}
+                  className="details-button"
+                >
                   Show details
                 </button>
               )}

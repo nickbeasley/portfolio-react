@@ -65,29 +65,43 @@ class ContactView extends React.Component {
               <label className="contact-form__label" hidden>
                 Contact Form
               </label>
+              <label for="contact-name" className="contact-form__label">
+                Name:
+              </label>
+              <br />
               <input
                 className="form-item"
                 required
-                placeholder="Name"
+                placeholder="Johnny Karate"
                 name="name"
                 value={name}
                 onChange={this.handleChange}
-              />
+              />{" "}
+              <br />
+              <label for="contact-email" className="contact-form__label">
+                Email:
+              </label>{" "}
+              <br />
               <input
                 className="form-item"
                 type="email"
                 id="contact-email"
-                placeholder="Email"
+                placeholder="johnny@karate.com"
                 required
                 name="email"
                 value={email}
                 onChange={this.handleChange}
-              />
+              />{" "}
+              <br />
+              <label for="contact-message" className="contact-form__label">
+                Send a message:
+              </label>
+              <br />
               <textarea
                 className="form-item"
                 maxLength="240"
                 id="contact-message"
-                placeholder="Type here"
+                placeholder="We love your work! Please come work for us!"
                 required
                 name="message"
                 value={message}

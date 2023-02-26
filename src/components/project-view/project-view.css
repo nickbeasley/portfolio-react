@@ -4,6 +4,7 @@
   --light-blue: #53cbfb;
   --gray: #cecece;
   --white: #ffffff;
+  --details-button: #bebebe;
 }
 .project-header {
   text-align: center;
@@ -16,7 +17,7 @@
 }
 .project-ss-mobile {
   width: auto;
-  height: 200px;
+  height: 150px;
   padding: 10px;
 }
 .page-title {
@@ -34,4 +35,11 @@
   padding: 10px;
   text-align: center;
   margin: 10px;
+}
+.details-button {
+  background-color: var(--details-button);
+  color: var(--black);
+  size: small;
+  border-radius: 5px;
+  text-align: center;
 }
