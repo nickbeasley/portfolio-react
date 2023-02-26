@@ -10,11 +10,17 @@
   </head>
   <body>
     <div class="app-container"></div>
-    <form id="contact-form" name="Contact" method="POST" netlify>
+    <form
+      onSubmit="{this.handleSubmit}"
+      id="contact-form"
+      name="Contact"
+      method="POST"
+      netlify
+    >
       <input type="hidden" name="contact-form" value="index.html" />
       <fieldset>
         <legend>Contact Form</legend>
-        <label class="contact-form__label" hidden> Contact Form </label>
+        <label className="contact-form__label" hidden> Contact Form </label>
         <input className="form-item" required placeholder="Name" name="name" />
         <input
           className="form-item"
@@ -32,7 +38,7 @@
           required
           name="message"
         ></textarea>
-        <input class="input1" type="submit" value="Send Message" />
+        <input className="input1" type="submit" value="Send Message" />
       </fieldset>
     </form>
     <script src="/index.b4b6dfad.js" defer=""></script>
