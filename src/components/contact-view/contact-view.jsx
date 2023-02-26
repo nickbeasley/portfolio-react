@@ -11,10 +11,8 @@ class ContactView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: "",
-      lastName: "",
+      name: "",
       email: "",
-      tel: "",
       message: "",
     };
   }
@@ -31,7 +29,7 @@ class ContactView extends React.Component {
   };
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
   render() {
-    const { firstName, lastName, email, message, tel } = this.state;
+    const { name, email, message } = this.state;
     return (
       <Container>
         <h1 className="contact-title">Contact</h1>
@@ -70,17 +68,9 @@ class ContactView extends React.Component {
               <input
                 className="form-item"
                 required
-                placeholder="First Name"
-                name="firstName"
-                value={firstName}
-                onChange={this.handleChange}
-              />
-              <input
-                className="form-item"
-                required
-                placeholder="Last Name"
-                name="lastName"
-                value={lastName}
+                placeholder="Name"
+                name="name"
+                value={name}
                 onChange={this.handleChange}
               />
               <input
@@ -91,15 +81,6 @@ class ContactView extends React.Component {
                 required
                 name="email"
                 value={email}
-                onChange={this.handleChange}
-              />
-              <input
-                className="form-item"
-                type="tel"
-                id="contact-tel"
-                placeholder="Telephone"
-                name="tel"
-                value={tel}
                 onChange={this.handleChange}
               />
               <textarea
