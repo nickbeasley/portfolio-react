@@ -30,6 +30,7 @@ function ContactView() {
           name="contact"
           method="POST"
           data-netlify="true"
+          netlify
         >
           <fieldset>
             <legend>Contact Form</legend>
