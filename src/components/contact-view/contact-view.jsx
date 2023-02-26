@@ -69,18 +69,20 @@ class ContactView extends React.Component {
                 Contact Form
               </label>
               <input
+                type={"text"}
                 className="form-item"
                 required
                 placeholder="First Name"
-                name="first-name"
+                name="firstName"
                 value={firstName}
                 onChange={this.handleChange}
               />
               <input
+                type={"text"}
                 className="form-item"
                 required
                 placeholder="Last Name"
-                name="last-name"
+                name="lastName"
                 value={lastName}
                 onChange={this.handleChange}
               />
