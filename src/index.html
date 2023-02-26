@@ -10,14 +10,8 @@
   </head>
   <body>
     <div class="app-container"></div>
-    <form
-      onSubmit="{this.handleSubmit}"
-      id="contact-form"
-      name="Contact"
-      method="POST"
-      netlify
-    >
-      <input type="hidden" name="contact-form" value="index.html" />
+    <form id="contact-form" name="Contact-Form" method="POST" netlify>
+      <input type="hidden" name="hidden-input" value="index.html" />
       <fieldset>
         <legend>Contact Form</legend>
         <label className="contact-form__label" hidden> Contact Form </label>

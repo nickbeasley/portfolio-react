@@ -21,7 +21,7 @@ class ContactView extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "Contact", ...this.state }),
+      body: encode({ "form-name": "Contact-Form", ...this.state }),
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
@@ -55,11 +55,11 @@ class ContactView extends React.Component {
           <form
             onSubmit={this.handleSubmit}
             id="contact-form"
-            name="Contact"
+            name="Contact-Form"
             method="POST"
             netlify
           >
-            <input type="hidden" name="contact-form" value="index.html" />
+            <input type="hidden" name="hidden-input" value="index.html" />
             <fieldset>
               <legend>Contact Form</legend>
               <label className="contact-form__label" hidden>
