@@ -27,7 +27,6 @@ class ContactView extends React.Component {
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
-
     e.preventDefault();
   };
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
@@ -65,7 +64,7 @@ class ContactView extends React.Component {
             <input type="hidden" name="contact-form" value="index.html" />
             <fieldset>
               <legend>Contact Form</legend>
-              <label class="contact-form__label" hidden>
+              <label className="contact-form__label" hidden>
                 Contact Form
               </label>
               <input
@@ -105,7 +104,7 @@ class ContactView extends React.Component {
               />
               <textarea
                 className="form-item"
-                maxlength="240"
+                maxLength="240"
                 id="contact-message"
                 placeholder="Type here"
                 required
@@ -113,7 +112,7 @@ class ContactView extends React.Component {
                 value={message}
                 onChange={this.handleChange}
               ></textarea>
-              <input class="input1" type="submit" value="Send Message" />
+              <input className="input1" type="submit" value="Send Message" />
             </fieldset>
           </form>
         </div>
