@@ -16,6 +16,8 @@
 }
 .navbar {
   background-color: var(--black);
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 .navbar-item {
   color: var(--white);

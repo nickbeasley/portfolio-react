@@ -28,6 +28,7 @@
 
 .grid__item {
   padding: 10px;
+  background-color: var(--gray);
 }
 .project-button {
   padding: 10px;

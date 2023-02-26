@@ -1,13 +1,7 @@
-:root {
-  --black: #040404;
-  --dark-blue: #0443f2;
-  --light-blue: #53cbfb;
-  --gray: #cecece;
-}
 .app-container {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: var(--black);
+  /* background-color: var(--black); */
   width: 100%;
 }
 .App {
