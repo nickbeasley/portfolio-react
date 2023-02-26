@@ -24,7 +24,7 @@ class ContactView extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
 
     e.preventDefault();
