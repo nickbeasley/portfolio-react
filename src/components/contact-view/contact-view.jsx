@@ -71,7 +71,7 @@ function ContactView() {
               required
               name="message"
             ></textarea>
-            <button class="input1" type="submit" value="Send Message" />
+            <input class="input1" type="submit" value="Send Message" />
           </fieldset>
         </form>
       </div>
