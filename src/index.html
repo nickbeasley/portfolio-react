@@ -18,43 +18,54 @@
       netlify
     >
       <input type="hidden" name="contact" value="index.html" />
-      <label class="contact-form__label" hidden> Contact Form </label>
-      <input
-        className="form-item"
-        required
-        placeholder="First Name"
-        name="firstName"
-      />
-      <input
-        className="form-item"
-        required
-        placeholder="Last Name"
-        name="lastName"
-      />
-      <input
-        className="form-item"
-        type="email"
-        id="contact-email"
-        placeholder="Email"
-        required
-        name="email"
-      />
-      <input
-        className="form-item"
-        type="tel"
-        id="contact-tel"
-        placeholder="Telephone"
-        name="tel"
-      />
-      <textarea
-        className="form-item"
-        maxlength="240"
-        id="contact-message"
-        placeholder="Type here"
-        required
-        name="message"
-      ></textarea>
-      <input class="input1" type="submit" value="Send Message" />
+      <fieldset>
+        <legend>Contact Form</legend>
+        <label class="contact-form__label" hidden> Contact Form </label>
+        <input
+          type="text"
+          className="form-item"
+          required
+          placeholder="First
+        Name"
+          name="firstName"
+          value="{firstName}"
+          onChange="{this.handleChange}"
+        />
+        <input
+          type="text"
+          className="form-item"
+          required
+          placeholder="Last
+        Name"
+          name="lastName"
+          value="{lastName}"
+          onChange="{this.handleChange}"
+        />
+        <input
+          className="form-item"
+          type="email"
+          id="contact-email"
+          placeholder="Email"
+          required
+          name="email"
+        />
+        <input
+          className="form-item"
+          type="tel"
+          id="contact-tel"
+          placeholder="Telephone"
+          name="tel"
+        />
+        <textarea
+          className="form-item"
+          maxlength="240"
+          id="contact-message"
+          placeholder="Type here"
+          required
+          name="message"
+        ></textarea>
+        <input class="input1" type="submit" value="Send Message" />
+      </fieldset>
     </form>
     <script src="/index.b4b6dfad.js" defer=""></script>
   </body>
