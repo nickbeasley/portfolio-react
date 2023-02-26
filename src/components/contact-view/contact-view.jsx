@@ -57,7 +57,7 @@ class ContactView extends React.Component {
             id="contact-form"
             name="Contact-Form"
             method="POST"
-            netlify
+            data-netlify="true"
           >
             <input type="hidden" name="hidden-input" value="index.html" />
             <fieldset>
