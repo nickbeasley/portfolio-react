@@ -9,15 +9,30 @@ import NixFlixServerPhoto from "../../images/NixFlixServerSS.png";
 import "./project-view.css";
 
 function ProjectView() {
-  const [showDetails, setShowDetails] = useState(false);
+  const [projectDetails, setProjectDetails] = useState({
+    Pokedex: false,
+    ToDoList: false,
+    MeetUp: false,
+    ChatApp: false,
+    NixFlix: false,
+    NixFlixServer: false,
+    Portfolio: false,
+  });
 
-  const toggleDetails = () => {
-    setShowDetails(!showDetails);
+  const toggleDetails = (project) => {
+    setProjectDetails((prevState) => ({
+      ...prevState,
+      [project]: !prevState[project],
+    }));
   };
 
-  const hideDetails = () => {
-    setShowDetails(false);
+  const hideDetails = (project) => {
+    setProjectDetails((prevState) => ({
+      ...prevState,
+      [project]: false,
+    }));
   };
+
   return (
     <Container>
       <h1 className="page-title">Check out my projects!</h1>
@@ -36,7 +51,7 @@ function ProjectView() {
                 loads data from an external API and enables the viewing of data
                 points in detail.
               </Card.Text>
-              {showDetails ? (
+              {projectDetails.Pokedex ? (
                 <>
                   <ul>
                     <li>
@@ -59,10 +74,30 @@ function ProjectView() {
                       and debug my code.
                     </li>
                   </ul>
-                  <button onClick={hideDetails}>Hide details</button>
+                  <Button
+                    className="project-button"
+                    href="https://nickbeasley.github.io/Pokedex.NKB/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See it here!
+                  </Button>
+                  <Button
+                    className="project-button"
+                    href="https://github.com/nickbeasley/Pokedex.NKB.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See the code here!
+                  </Button>
+                  <button onClick={() => hideDetails("Pokedex")}>
+                    Hide details
+                  </button>
                 </>
               ) : (
-                <button onClick={toggleDetails}>Show details</button>
+                <button onClick={() => toggleDetails("Pokedex")}>
+                  Show details
+                </button>
               )}
             </div>
           </Card>
@@ -79,7 +114,7 @@ function ProjectView() {
               <Card.Text>
                 This is a small web application made using jQuery.
               </Card.Text>
-              {showDetails ? (
+              {projectDetails.ToDoList ? (
                 <>
                   <ul>
                     <li>The user can add a new item to a list of items.</li>
@@ -108,10 +143,14 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={hideDetails}>Hide details</button>
+                  <button onClick={() => hideDetails("ToDoList")}>
+                    Hide details
+                  </button>
                 </>
               ) : (
-                <button onClick={toggleDetails}>Show details</button>
+                <button onClick={() => toggleDetails("ToDoList")}>
+                  Show details
+                </button>
               )}
             </div>
           </Card>
@@ -131,7 +170,7 @@ function ProjectView() {
                 Test Driven Development, serverless functions, and OAuth2
                 authentication.
               </Card.Text>
-              {showDetails ? (
+              {projectDetails.MeetUp ? (
                 <>
                   <ul>
                     <li>
@@ -176,10 +215,14 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={hideDetails}>Hide details</button>
+                  <button onClick={() => hideDetails("MeetUp")}>
+                    Hide details
+                  </button>
                 </>
               ) : (
-                <button onClick={toggleDetails}>Show details</button>
+                <button onClick={() => toggleDetails("MeetUp")}>
+                  Show details
+                </button>
               )}
             </div>
           </Card>
@@ -197,7 +240,7 @@ function ProjectView() {
                 Server side code is A RESTful API coded from scratch using
                 Node.js.
               </Card.Text>
-              {showDetails ? (
+              {projectDetails.NixFlixServer ? (
                 <>
                   <ul>
                     <li>
@@ -238,10 +281,14 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={hideDetails}>Hide details</button>
+                  <button onClick={() => hideDetails("NixFlixServer")}>
+                    Hide details
+                  </button>
                 </>
               ) : (
-                <button onClick={toggleDetails}>Show details</button>
+                <button onClick={() => toggleDetails("NixFlixServer")}>
+                  Show details
+                </button>
               )}
             </div>
           </Card>
@@ -258,7 +305,7 @@ function ProjectView() {
               <Card.Text>
                 A client-side frontend for a RESTful API, built with React.
               </Card.Text>
-              {showDetails ? (
+              {projectDetails.NixFlix ? (
                 <>
                   <ul>
                     <li>
@@ -308,10 +355,14 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={hideDetails}>Hide details</button>
+                  <button onClick={() => hideDetails("NixFlix")}>
+                    Hide details
+                  </button>
                 </>
               ) : (
-                <button onClick={toggleDetails}>Show details</button>
+                <button onClick={() => toggleDetails("NixFlix")}>
+                  Show details
+                </button>
               )}
             </div>
           </Card>
@@ -329,7 +380,7 @@ function ProjectView() {
                 A JavaScript chat app built with ReactNative, featuring advanced
                 functionality such as offline storage or geolocation.
               </Card.Text>
-              {showDetails ? (
+              {projectDetails.ChatApp ? (
                 <>
                   <ul>
                     <li>
@@ -372,10 +423,58 @@ function ProjectView() {
                   >
                     See the code here!
                   </Button>
-                  <button onClick={hideDetails}>Hide details</button>
+                  <button onClick={() => hideDetails("ChatApp")}>
+                    Hide details
+                  </button>
                 </>
               ) : (
-                <button onClick={toggleDetails}>Show details</button>
+                <button onClick={() => toggleDetails("ChatApp")}>
+                  Show details
+                </button>
+              )}
+            </div>
+          </Card>
+        </Col>
+        <Col>
+          <Card className="grid__item">
+            <Card.Title className="project-header">
+              This React Portfolio site!
+            </Card.Title>
+            <div className="card-body">
+              <Card.Text></Card.Text>
+              {projectDetails.Portfolio ? (
+                <>
+                  <ul>
+                    <li>React-based front-end portfolio website. </li>
+                    <li>
+                      Customized styling using CSS and CSS framework Bootstrap.
+                    </li>
+                    <li>
+                      Use of React features like props, state, and hooks to
+                      manage and display data dynamically.
+                    </li>
+                    <li>Use of React Router to create a multi-page website.</li>
+                    <li>
+                      Use of version control tool, GitHub, for project
+                      management and collaboration.
+                    </li>
+                  </ul>
+                  <Button
+                    className="project-button"
+                    href="https://github.com/nickbeasley/portfolio-react.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See the code here!
+                  </Button>
+                  <button onClick={() => hideDetails("Portfolio")}>
+                    Hide details
+                  </button>
+                </>
+              ) : (
+                <button onClick={() => toggleDetails("Portfolio")}>
+                  Show details
+                </button>
               )}
             </div>
           </Card>
