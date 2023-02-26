@@ -26,6 +26,17 @@
   border-radius: 15px;
   border: 1px solid var(--black);
 }
+@media (max-width: 768px) {
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    width: 90%;
+  }
+}
 .submit {
   margin: 10px;
 }
