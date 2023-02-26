@@ -14,6 +14,36 @@
     <title>Nick Beasley</title>
   </head>
   <body>
+    <form
+      id="contact-form"
+      name="Contact-Form"
+      method="POST"
+      data-netlify="true"
+    >
+      <input type="hidden" name="hidden-input" value="index.html" />
+      <fieldset>
+        <legend>Contact Form</legend>
+        <label className="contact-form__label" hidden> Contact Form </label>
+        <input className="form-item" required placeholder="Name" name="name" />
+        <input
+          className="form-item"
+          type="email"
+          id="contact-email"
+          placeholder="Email"
+          required
+          name="email"
+        />
+        <textarea
+          className="form-item"
+          maxlength="240"
+          id="contact-message"
+          placeholder="Type here"
+          required
+          name="message"
+        ></textarea>
+        <input className="input1" type="submit" value="Send Message" />
+      </fieldset>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
