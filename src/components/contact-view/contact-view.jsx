@@ -101,7 +101,7 @@ class ContactView extends React.Component {
                 type="tel"
                 id="contact-tel"
                 placeholder="Telephone"
-                name="phone"
+                name="tel"
                 value={tel}
                 onChange={this.handleChange}
               />
