@@ -33,7 +33,6 @@ function ContactView() {
           netlify
         >
           <input type="hidden" name="Contact" value="Contact Form" />
-
           <fieldset>
             <legend>Contact Form</legend>
             <label class="contact-form__label" hidden>
