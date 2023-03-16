@@ -7,6 +7,7 @@ import PokedexPhoto from "../../images/PokedexSS.png";
 import NixFlixPhoto from "../../images/NixFlixSS.png";
 import NixFlixServerPhoto from "../../images/NixFlixServerSS.png";
 import PortfolioPhoto from "../../images/PortfolioSS.png";
+import NixFlixAngularPhoto from "../../images/NixFlixAngularSS.png";
 import "./project-view.css";
 
 function ProjectView() {
@@ -379,7 +380,7 @@ function ProjectView() {
         </Col>
         <Col>
           <Card className="grid__item">
-            <Card.Title className="project-header">NixFlix!</Card.Title>
+            <Card.Title className="project-header">NixFlix(React)</Card.Title>
             <Card.Img
               src={NixFlixPhoto}
               className="project-ss"
@@ -523,6 +524,77 @@ function ProjectView() {
               ) : (
                 <button
                   onClick={() => toggleDetails("ChatApp")}
+                  className="details-button"
+                >
+                  Show details
+                </button>
+              )}
+            </div>
+          </Card>
+        </Col>
+
+        <Col>
+          <Card className="grid__item">
+            <Card.Title className="project-header">NixFlix(Angular)</Card.Title>
+            <Card.Img
+              src={NixFlixAngularPhoto}
+              className="project-ss"
+              alt="NixFlix(Angular)"
+            />
+            <div className="card-body">
+              <Card.Text>
+                Using Angular, I built the client-side for NixFlix based on its
+                existing server-side code (REST API and database), with
+                supporting documentation.
+              </Card.Text>
+              {projectDetails.NixFlixAngular ? (
+                <>
+                  <ul>
+                    <li>
+                      Users are able to receive information on movies,
+                      directors, and genres to learn more about movies they've
+                      watched or are interested in. Users can also create a
+                      profile and save data about their favorite movies.
+                    </li>
+                    <li>
+                      The app should display a welcome view where users will be
+                      able to either log in or register an account.
+                    </li>
+                    <li>
+                      The app was designed to be responsive using Angular
+                      Materail.
+                    </li>
+                    <li>
+                      The application's codebase contains comments using
+                      Typedoc.
+                    </li>
+                  </ul>
+                  <Button
+                    className="project-button"
+                    href="https://github.com/nickbeasley/myFlix-Angular-client.git"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See the code here!
+                  </Button>
+                  <Button
+                    className="project-button"
+                    href="https://nickbeasley.github.io/myFlix-Angular-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See it here!
+                  </Button>
+                  <button
+                    onClick={() => hideDetails("NixFlixAngular")}
+                    className="details-button"
+                  >
+                    Hide details
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => toggleDetails("NixFlixAngular")}
                   className="details-button"
                 >
                   Show details
