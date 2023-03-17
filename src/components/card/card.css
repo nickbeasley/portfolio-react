@@ -20,8 +20,8 @@
 
 .project-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  max-height: 350px;
+  object-fit: contain;
 }
 .card-title {
   margin: 20px;
