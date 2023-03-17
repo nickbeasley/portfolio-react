@@ -3,6 +3,7 @@ import Menu from "../navbar/navbar";
 import AboutView from "../about-view/about-view";
 import ProjectView from "../project-view/project-view";
 import ContactView from "../contact-view/contact-view";
+import WorkView from "../work-view/work-view";
 import Footer from "../footer/footer";
 import Portrait from "../../images/portrait.jpeg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -87,6 +88,14 @@ function MainView() {
               element={
                 <Container>
                   <ContactView />
+                </Container>
+              }
+            />
+            <Route
+              path="/work"
+              element={
+                <Container>
+                  <WorkView />
                 </Container>
               }
             />

@@ -46,12 +46,24 @@ function Menu(props) {
               About
             </Nav.Link>
           </Navbar.Brand>
-          <Navbar.Brand className="navbar-item">
+          {/* <Navbar.Brand className="navbar-item">
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
               }}
               to="/projects"
+              as={Link}
+            >
+              Projects
+            </Nav.Link>
+          </Navbar.Brand> */}
+
+          <Navbar.Brand className="navbar-item">
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+              }}
+              to="/work"
               as={Link}
             >
               Projects

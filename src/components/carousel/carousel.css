@@ -1,0 +1,81 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-card {
+  margin: 0 20px;
+}
+
+carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 10px;
+}
+.carousel-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+carousel-button:first-child {
+  left: 0;
+}
+
+carousel-button:last-child {
+  right: 0;
+}
+
+.card-container {
+  display: flex;
+  transform: translateX(calc(-100% * var(--active-index)));
+  transition: transform 0.3s ease-in-out;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.next-button-bg {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.next-img {
+  width: 40px;
+  height: 40px;
+}
+.prev-button-bg {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.prev-img {
+  width: 40px;
+  height: 40px;
+  transform: rotate(180deg);
+}
+@media (max-width: 600px) {
+  .carousel {
+    flex-direction: column;
+  }
+  .carousel-button {
+    position: relative;
+    top: unset;
+    transform: unset;
+    margin: 10px auto;
+  }
+  .carousel-button:first-child {
+    left: unset;
+  }
+  .carousel-button:last-child {
+    right: unset;
+  }
+  .card {
+    width: 350px;
+  }
+}
