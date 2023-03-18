@@ -43,7 +43,7 @@ function Menu(props) {
               to="/about"
               as={Link}
             >
-              Tech Stack
+              Tech Skills
             </Nav.Link>
           </Navbar.Brand>
           {/* <Navbar.Brand className="navbar-item">

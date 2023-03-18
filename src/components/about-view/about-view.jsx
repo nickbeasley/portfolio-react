@@ -31,7 +31,7 @@ function AboutView() {
   return (
     <div className="skills-section">
       <div className="skill-box">
-        <h1 className="skills-title">Tech Stack</h1>
+        <h1 className="skills-title">Developer Toolbox</h1>
         <div className="skill-logos">
           <figure>
             <img src={htmlLogo} alt="HTML5" className="skill-logo"></img>
@@ -147,7 +147,7 @@ function AboutView() {
           </figure>
         </div>{" "}
         <a href={Resume} download>
-          <button className="cv-button">Download CV</button>
+          <button className="cv-button">Download Resume</button>
         </a>
       </div>
     </div>
