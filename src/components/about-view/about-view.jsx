@@ -21,12 +21,17 @@ import vscodeLogo from "../../images/visual-studio-code.svg";
 import gitLogo from "../../images/githublogo.png";
 import reactNativeLogo from "../../images/react-native.svg";
 import firebaseLogo from "../../images/firebase.svg";
+import expoLogo from "../../images/expo-go.png";
+import jestLogo from "../../images/jest.svg";
+import oAuthLogo from "../../images/oauth.svg";
+import parcelLogo from "../../images/parcel.png";
+import angularMaterialLogo from "../../images/angular-material.png";
 
 function AboutView() {
   return (
     <div className="skills-section">
-      <h1 className="skills-title">Skills</h1>
       <div className="skill-box">
+        <h1 className="skills-title">Tech Stack</h1>
         <div className="skill-logos">
           <figure>
             <img src={htmlLogo} alt="HTML5" className="skill-logo"></img>
@@ -116,12 +121,35 @@ function AboutView() {
             <img src={firebaseLogo} alt="Firebase" className="skill-logo"></img>
             <figcaption>Google Firebase</figcaption>
           </figure>
-        </div>
+          <figure>
+            <img src={expoLogo} alt="Expo" className="skill-logo"></img>
+            <figcaption>Expo Go</figcaption>
+          </figure>
+          <figure>
+            <img src={jestLogo} alt="Jest" className="skill-logo"></img>
+            <figcaption>Jest</figcaption>
+          </figure>
+          <figure>
+            <img src={oAuthLogo} alt="OAuth" className="skill-logo"></img>
+            <figcaption>OAuth2</figcaption>
+          </figure>
+          <figure>
+            <img src={parcelLogo} alt="Parcel" className="skill-logo"></img>
+            <figcaption>Parcel</figcaption>
+          </figure>
+          <figure>
+            <img
+              src={angularMaterialLogo}
+              alt="Angular Material"
+              className="skill-logo"
+            ></img>
+            <figcaption>Angular Material</figcaption>
+          </figure>
+        </div>{" "}
+        <a href={Resume} download>
+          <button className="cv-button">Download CV</button>
+        </a>
       </div>
-
-      <a href={Resume} download>
-        <button className="cv-button">Download CV</button>
-      </a>
     </div>
   );
 }

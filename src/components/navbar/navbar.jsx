@@ -32,7 +32,7 @@ function Menu(props) {
               to="/"
               as={Link}
             >
-              Home
+              About
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Brand className="navbar-item">
@@ -43,7 +43,7 @@ function Menu(props) {
               to="/about"
               as={Link}
             >
-              About
+              Tech Stack
             </Nav.Link>
           </Navbar.Brand>
           {/* <Navbar.Brand className="navbar-item">

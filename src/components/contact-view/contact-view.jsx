@@ -32,25 +32,7 @@ class ContactView extends React.Component {
     const { name, email, message } = this.state;
     return (
       <Container>
-        <h1 className="contact-title">Contact</h1>
-        <div className="contact-info">
-          Nicholas Beasley <br />
-          Evansville, <br />
-          Indiana
-          <br />
-          47712 <br />
-          <a href="mailto:nickbeas2010@gmail.com">nickbeas2010@gmail.com</a>
-          <br />
-          <a
-            href="https://www.linkedin.com/in/nicholas-beasley-4a8768ab"
-            target="blank"
-          >
-            LinkedIn
-          </a>
-          <br />
-          <a href="tel:8124801651">Call (812)480-1651</a>
-          <br />
-        </div>
+        {/* <h1 className="contact-title">Get in touch</h1> */}
         <div className="contact-form">
           <form
             onSubmit={this.handleSubmit}
@@ -86,7 +68,7 @@ class ContactView extends React.Component {
                 className="form-item"
                 type="email"
                 id="contact-email"
-                placeholder="johnny@karate.com"
+                placeholder="mrKarate@email.com"
                 required
                 name="email"
                 value={email}
@@ -101,7 +83,7 @@ class ContactView extends React.Component {
                 className="form-item"
                 maxLength="240"
                 id="contact-message"
-                placeholder="We love your work! Please come work for us!"
+                placeholder="Please come work for us!"
                 required
                 name="message"
                 value={message}
@@ -110,6 +92,24 @@ class ContactView extends React.Component {
               <input className="input1" type="submit" value="Send Message" />
             </fieldset>
           </form>
+        </div>{" "}
+        <div className="contact-info">
+          Nicholas Beasley <br />
+          Evansville, <br />
+          Indiana
+          <br />
+          47712 <br />
+          <a href="mailto:nickbeas2010@gmail.com">nickbeas2010@gmail.com</a>
+          <br />
+          <a
+            href="https://www.linkedin.com/in/nicholas-beasley-4a8768ab"
+            target="blank"
+          >
+            LinkedIn
+          </a>
+          <br />
+          <a href="tel:8124801651">Call (812)480-1651</a>
+          <br />
         </div>
       </Container>
     );

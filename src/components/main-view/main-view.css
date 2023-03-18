@@ -12,15 +12,16 @@
   border-radius: 50%;
 }
 
-.main-section {
-  background-color: var(--gray);
-  padding: 30px;
-  border-radius: 25px;
-}
 p.aboutme {
   font-size: 1.5em;
   text-align: center;
 }
 span {
   padding: 5px;
+}
+.main-section {
+  background-color: var(--gray);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
 }

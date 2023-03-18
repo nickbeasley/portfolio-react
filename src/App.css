@@ -1,3 +1,11 @@
+:root {
+  --black: #040404;
+  --dark-blue: #0443f2;
+  --light-blue: #53cbfb;
+  --gray: #cecece;
+  --white: #ffffff;
+}
+
 .app-container {
   min-height: 100vh;
   min-width: 100vw;

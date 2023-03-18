@@ -1,7 +1,6 @@
 .skills-title {
   text-align: center;
-  color: var(--white);
-  background-color: var(--dark-blue);
+  color: var(--black);
   border-radius: 5px;
 }
 .skill-list {

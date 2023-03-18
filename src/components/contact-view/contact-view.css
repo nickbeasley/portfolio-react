@@ -21,7 +21,7 @@
   text-align: center;
   color: var(--black);
   background-color: var(--gray);
-  width: 50%;
+  width: 100%;
   padding: 10px;
   border-radius: 15px;
   border: 1px solid var(--black);
@@ -68,4 +68,8 @@
 .form-item {
   margin: 5px;
   border: 1px solid var(--black);
+  border-radius: 5px;
+  background-color: var(--white);
+  padding: 5px;
+  width: 100%;
 }
