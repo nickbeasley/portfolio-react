@@ -46,7 +46,7 @@ function Menu(props) {
               Tech Skills
             </Nav.Link>
           </Navbar.Brand>
-          {/* <Navbar.Brand className="navbar-item">
+          <Navbar.Brand className="navbar-item">
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
@@ -56,9 +56,9 @@ function Menu(props) {
             >
               Projects
             </Nav.Link>
-          </Navbar.Brand> */}
+          </Navbar.Brand>
 
-          <Navbar.Brand className="navbar-item">
+          {/* <Navbar.Brand className="navbar-item">
             <Nav.Link
               onClick={() => {
                 setExpanded(false);
@@ -66,9 +66,9 @@ function Menu(props) {
               to="/work"
               as={Link}
             >
-              Projects
+              Work
             </Nav.Link>
-          </Navbar.Brand>
+          </Navbar.Brand> */}
           <Navbar.Brand className="navbar-item">
             <Nav.Link
               onClick={() => {
