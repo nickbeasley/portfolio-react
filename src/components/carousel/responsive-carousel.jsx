@@ -8,6 +8,7 @@ const ResponsiveCarousel = ({ projects }) => {
 
   const onChange = (index) => {
     setActiveIndex(index);
+    setExpanded(false);
   };
 
   const onClickItem = () => {
