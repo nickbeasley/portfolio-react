@@ -14,6 +14,13 @@ const ResponsiveCarousel = ({ projects }) => {
   const onClickThumb = (index) => {
     setActiveIndex(index);
   };
+  // these two prevent body from scrolling when carousel is swiped
+  const onSwipeStart = () => {
+    document.body.style.overflow = "hidden";
+  };
+  const onSwipeEnd = () => {
+    document.body.style.overflow = "auto";
+  };
 
   return (
     <Carousel
@@ -23,6 +30,8 @@ const ResponsiveCarousel = ({ projects }) => {
       showThumbs={false}
       infiniteLoop={true}
       selectedItem={activeIndex}
+      onSwipeStart={onSwipeStart}
+      onSwipeEnd={onSwipeEnd}
     >
       {projects.map((project, index) => (
         <div key={index} className="carousel-card">
