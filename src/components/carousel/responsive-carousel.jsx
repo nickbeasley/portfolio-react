@@ -11,10 +11,6 @@ const ResponsiveCarousel = ({ projects }) => {
     setExpanded(false);
   };
 
-  const onClickItem = () => {
-    // handle click on item
-  };
-
   const onClickThumb = (index) => {
     setActiveIndex(index);
   };
@@ -23,7 +19,6 @@ const ResponsiveCarousel = ({ projects }) => {
     <Carousel
       showArrows={true}
       onChange={onChange}
-      onClickItem={onClickItem}
       onClickThumb={onClickThumb}
       showThumbs={false}
       infiniteLoop={true}
