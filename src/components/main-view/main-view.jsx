@@ -3,7 +3,6 @@ import Menu from "../navbar/navbar";
 import AboutView from "../about-view/about-view";
 import ProjectView from "../project-view/project-view";
 import ContactView from "../contact-view/contact-view";
-import WorkView from "../work-view/work-view";
 import Footer from "../footer/footer";
 import Portrait from "../../images/portrait.jpeg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -29,39 +28,47 @@ function MainView() {
                       src={Portrait}
                       alt="portrait"
                     />
-                    <p className="aboutme">
-                      Hi, I’m Nick Beasley. I’m a developer with a background in
-                      retail management and working with my team to troubleshoot
-                      devices. My role included identifying problems and
-                      assisting clients with implementing solutions. This helped
-                      me to understand issues from the customer perspective
-                      while also concentrating on meeting company goals. I’m
-                      transitioning to software development because my
-                      initiative to get things done and strong sense of
-                      curiosity make me want to develop my own technical
-                      solutions. My recent
-                      <span>
-                        <a
-                          className="CareerFoundry-link"
-                          href="https://careerfoundry.com"
+                    <div className="aboutme">
+                      <p>
+                        Hi, I’m Nick Beasley. I’m a developer with a background
+                        in retail management and working with my team to
+                        troubleshoot devices.{" "}
+                      </p>
+                      <p>
+                        My role included identifying problems and assisting
+                        clients with implementing solutions. This helped me to
+                        understand issues from the customer perspective while
+                        also concentrating on meeting company goals.
+                      </p>
+                      <p>
+                        {" "}
+                        I’m transitioning to software development because my
+                        initiative to get things done and strong sense of
+                        curiosity make me want to develop my own technical
+                        solutions. My recent
+                        <span>
+                          <a
+                            className="CareerFoundry-link"
+                            href="https://careerfoundry.com"
+                            target="blank"
+                            rel="noopener noreferrer"
+                          >
+                            CareerFoundry
+                          </a>
+                        </span>
+                        experience has solidified my desire to develop products,
+                        and I’m looking for a full-time role that offers a
+                        similar opportunity. <br />
+                      </p>
+                      <div className="text-center">
+                        <Button
+                          href="https://github.com/nickbeasley"
                           target="blank"
                           rel="noopener noreferrer"
                         >
-                          CareerFoundry
-                        </a>
-                      </span>
-                      experience has solidified my desire to develop products,
-                      and I’m looking for a full-time role that offers a similar
-                      opportunity. <br />
-                    </p>
-                    <div className="text-center">
-                      <Button
-                        href="https://github.com/nickbeasley"
-                        target="blank"
-                        rel="noopener noreferrer"
-                      >
-                        Check out some of my code!
-                      </Button>
+                          Check out some of my code!
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </Container>
@@ -88,14 +95,6 @@ function MainView() {
               element={
                 <Container>
                   <ContactView />
-                </Container>
-              }
-            />
-            <Route
-              path="/work"
-              element={
-                <Container>
-                  <WorkView />
                 </Container>
               }
             />

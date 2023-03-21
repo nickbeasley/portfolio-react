@@ -21,11 +21,11 @@ import vscodeLogo from "../../images/visual-studio-code.svg";
 import gitLogo from "../../images/githublogo.png";
 import reactNativeLogo from "../../images/react-native.svg";
 import firebaseLogo from "../../images/firebase.svg";
-import expoLogo from "../../images/expo-go.png";
+import expoLogo from "../../images/expo-go.svg";
 import jestLogo from "../../images/jest.svg";
 import oAuthLogo from "../../images/oauth.svg";
-import parcelLogo from "../../images/parcel.png";
-import angularMaterialLogo from "../../images/angular-material.png";
+import parcelLogo from "../../images/parcel-logo-icon.svg";
+import angularMaterialLogo from "../../images/angular-material.svg";
 import yarnLogo from "../../images/yarn.svg";
 
 function AboutView() {
