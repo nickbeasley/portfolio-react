@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import linkedinlogo from "../../images/linkedinlogo.png";
 import githublogo from "../../images/githublogo.png";
 import twitterlogo from "../../images/twitterlogo.png";
+import mediumlogo from "../../images/mediumlogo.svg";
 import "./footer.css";
 
 function Footer() {
@@ -34,6 +35,15 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <img src={twitterlogo} alt="Twitter" height={30} />
+          </a>
+        </Col>
+        <Col xs="auto" className="text-center">
+          <a
+            href="https://medium.com/@nickbeas2010"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={mediumlogo} alt="Medium" height={30} />
           </a>
         </Col>
       </Row>
