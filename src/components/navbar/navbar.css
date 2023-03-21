@@ -18,6 +18,7 @@
   background-color: var(--black);
   margin-bottom: 20px;
   border-radius: 10px;
+  opacity: 0.9;
 }
 .navbar-item {
   color: var(--white);
