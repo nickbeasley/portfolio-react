@@ -1,6 +1,6 @@
 :root {
   --black: #040404;
-  --dark-blue: #0443f2;
+  --blue-secondary: #0443f2;
   --light-blue: #53cbfb;
   --gray: #cecece;
   --white: #ffffff;
@@ -27,7 +27,7 @@
   color: var(--light-blue);
 }
 .navbar-item:active {
-  color: var(--dark-blue);
+  color: var(--blue-secondary);
 }
 .navbar-item:visited {
   color: var(--white);

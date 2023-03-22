@@ -9,25 +9,6 @@
   margin: 0 20px;
 }
 
-carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 10px;
-}
-.carousel-button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-carousel-button:first-child {
-  left: 0;
-}
-
-carousel-button:last-child {
-  right: 0;
-}
-
 .card-container {
   display: flex;
   transform: translateX(calc(-100% * var(--active-index)));
@@ -40,54 +21,13 @@ carousel-button:last-child {
   max-width: 100%;
 }
 
-.next-button-bg {
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-}
-.next-img {
-  width: 40px;
-  height: 40px;
-}
-.prev-button-bg {
-  background-color: white;
-  padding: 5px;
-  border-radius: 50%;
-}
-.prev-img {
-  width: 40px;
-  height: 40px;
-  transform: rotate(180deg);
-}
-@media (max-width: 600px) {
-  .carousel {
-    flex-direction: column;
-  }
-  .carousel-button {
-    position: relative;
-    top: unset;
-    transform: unset;
-    margin: 10px auto;
-  }
-  .carousel-button:first-child {
-    left: unset;
-  }
-  .carousel-button:last-child {
-    right: unset;
-  }
-  .card {
-    width: 350px;
-  }
-}
 .cards {
   background-color: var(--gray);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px;
-
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
   text-decoration: none;
   color: var(--black);
 }
@@ -98,7 +38,6 @@ carousel-button:last-child {
   align-items: center;
   text-align: center;
 }
-
 .project-img {
   width: 100%;
   max-height: 350px;
@@ -119,41 +58,28 @@ carousel-button:last-child {
   padding: 10px 20px;
   font-size: 14px;
 }
-.code-link,
-.demo-link {
+
+.card-buttons a,
+.card-buttons button {
   display: block;
-  margin: 20px;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
   padding: 10px 20px;
   border-radius: 5px;
+  margin: 10px auto;
   text-align: center;
-  color: #fff;
+  background-color: var(--blue-secondary);
+  width: 50%;
 }
-.code-link {
-  background-color: #007bff;
-  color: var(--white);
+.card-buttons a:hover,
+.card-buttons button:hover {
+  background-color: var(--blue);
+  color: var(--gray);
 }
-.demo-link {
-  background-color: #28a745;
-  color: var(--white);
-}
-.details-button {
-  font-size: 0.8rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  background-color: #e3e3e3;
-  color: rgb(0, 0, 0);
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-.details-button:hover {
-  background-color: #d1d1d1;
-}
-.demo-link:hover {
-  background-color: #218838;
-  color: var(--white);
-}
-.code-link:hover {
-  background-color: #0069d9;
-  color: var(--white);
+@media screen and (max-width: 768px) {
+  .card-buttons a,
+  .card-buttons button {
+    width: 100%;
+  }
 }

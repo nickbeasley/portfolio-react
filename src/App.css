@@ -1,7 +1,8 @@
 :root {
   --black: #040404;
-  --dark-blue: #0443f2;
+  --blue-secondary: #0443f2;
   --light-blue: #53cbfb;
+  --blue: #007bff;
   --gray: #cecece;
   --white: #ffffff;
 }
@@ -14,6 +15,16 @@
 }
 .App {
   text-align: center;
+}
+
+#background-image {
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 .App-logo {

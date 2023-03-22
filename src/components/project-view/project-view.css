@@ -1,6 +1,6 @@
 :root {
   --black: #040404;
-  --dark-blue: #0443f2;
+  --blue-secondary: #0443f2;
   --light-blue: #53cbfb;
   --gray: #cecece;
   --white: #ffffff;
@@ -23,7 +23,7 @@
 .page-title {
   text-align: center;
   color: var(--white);
-  background-color: var(--dark-blue);
+  background-color: var(--blue-secondary);
   border-radius: 5px;
 }
 

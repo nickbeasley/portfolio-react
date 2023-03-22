@@ -58,18 +58,18 @@ function MainView() {
                         </span>
                         experience has solidified my desire to develop products,
                         and I’m looking for a full-time role that offers a
-                        similar opportunity. <br />
+                        similar opportunity.
                       </p>
-                      <div className="text-center">
-                        <Button
-                          href="https://github.com/nickbeasley"
-                          target="blank"
-                          rel="noopener noreferrer"
-                        >
-                          Check out some of my code!
-                        </Button>
-                      </div>
                     </div>
+                  </div>
+                  <div className="text-center">
+                    <Button
+                      href="https://github.com/nickbeasley"
+                      target="blank"
+                      rel="noopener noreferrer"
+                    >
+                      Check out some of my code!
+                    </Button>
                   </div>
                 </Container>
               }

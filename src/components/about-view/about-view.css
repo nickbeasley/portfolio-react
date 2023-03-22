@@ -14,7 +14,7 @@
   margin: 10px;
 }
 .cv-button {
-  background-color: var(--dark-blue);
+  background-color: var(--blue-secondary);
   border: 1px solid #0077cc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -37,6 +37,9 @@
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+}
+.cv-button:hover {
+  background-color: var(--blue);
 }
 .skill-logo {
   width: 50px;

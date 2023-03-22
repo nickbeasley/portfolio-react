@@ -43,42 +43,55 @@ class ContactView extends React.Component {
           >
             <input type="hidden" name="hidden-input" value="index.html" />
             <fieldset>
-              <legend>Contact Form</legend>
-              <label className="contact-form__label" hidden>
-                Contact Form
-              </label>
-              <label for="contact-name" className="contact-form__label">
-                Name:
-              </label>
-              <br />
+              <h3>Contact Nicholas:</h3>
+              <ul></ul>
+              <li>
+                Email:{" "}
+                <a href="mailto:nickbeas2010@gmail.com">
+                  nickbeas2010@gmail.com
+                </a>
+              </li>
+              <li>
+                LinkedIn:{" "}
+                <a href="https://www.linkedin.com/in/nicholas-beasley-5b1b3b1b3/">
+                  LinkedIn
+                </a>
+              </li>
+              <li>Web Form:</li>
+              <label className="contact-form__label" hidden={true}></label>
+              <label
+                for="contact-name"
+                className="contact-form__label"
+                hidden={true}
+              ></label>
               <input
                 className="form-item"
                 required
-                placeholder="Johnny Karate"
+                placeholder="Name (i.e. Johnny Karate)"
                 name="name"
                 value={name}
                 onChange={this.handleChange}
               />{" "}
-              <br />
-              <label for="contact-email" className="contact-form__label">
-                Email:
-              </label>{" "}
-              <br />
+              <label
+                for="contact-email"
+                className="contact-form__label"
+                hidden={true}
+              ></label>{" "}
               <input
                 className="form-item"
                 type="email"
                 id="contact-email"
-                placeholder="mrKarate@email.com"
+                placeholder="Email i.e. (mrKarate@email.com)"
                 required
                 name="email"
                 value={email}
                 onChange={this.handleChange}
               />{" "}
-              <br />
-              <label for="contact-message" className="contact-form__label">
-                Send a message:
-              </label>
-              <br />
+              <label
+                for="contact-message"
+                className="contact-form__label"
+                hidden={true}
+              ></label>
               <textarea
                 className="form-item"
                 maxLength="240"
@@ -93,24 +106,6 @@ class ContactView extends React.Component {
             </fieldset>
           </form>
         </div>{" "}
-        <div className="contact-info">
-          Nicholas Beasley <br />
-          Evansville, <br />
-          Indiana
-          <br />
-          47712 <br />
-          <a href="mailto:nickbeas2010@gmail.com">nickbeas2010@gmail.com</a>
-          <br />
-          <a
-            href="https://www.linkedin.com/in/nicholas-beasley-4a8768ab"
-            target="blank"
-          >
-            LinkedIn
-          </a>
-          <br />
-          <a href="tel:8124801651">Call (812)480-1651</a>
-          <br />
-        </div>
       </Container>
     );
   }

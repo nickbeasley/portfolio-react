@@ -6,12 +6,13 @@ import image from "./images/bg1.svg";
 
 function App() {
   return (
-    <Container
-      className="app-container"
-      style={{
-        backgroundImage: `url(${image})`,
-      }}
-    >
+    <Container className="app-container">
+      <div
+        id="background-image"
+        style={{
+          backgroundImage: `url(${image})`,
+        }}
+      ></div>
       <MainView />
     </Container>
   );

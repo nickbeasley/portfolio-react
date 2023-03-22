@@ -1,10 +1,10 @@
 :root {
   --black: #131313;
-  --dark-blue: #266de2;
+  --blue-secondary: #266de2;
   --light-blue: #53cbfb;
   --gray: #f8f8ff;
 }
-.main-section Container {
+.main-section.container {
   padding: 30px;
 }
 .profile-picture {
@@ -13,7 +13,7 @@
   border-radius: 50%;
   margin-right: 20px;
 }
-.main-section .body {
+.main-section.container .body {
   display: flex;
 }
 .aboutme {
@@ -24,6 +24,10 @@
 .aboutme a {
   font-weight: bold;
   text-decoration: none;
+  color: var(--blue-secondary);
+}
+.aboutme a:hover {
+  color: var(--light-blue);
 }
 span {
   padding: 5px;
