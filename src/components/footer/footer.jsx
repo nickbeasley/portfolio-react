@@ -8,7 +8,7 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row className="justify-content-center footer">
-        <h3 className="foot-head">Connect with me on</h3>
+        {/* <h3 className="foot-head">Connect with me on</h3> */}
         <Col xs="auto" className="text-center">
           <a
             href="https://www.linkedin.com/in/nicholas-beasley-4a8768ab/"

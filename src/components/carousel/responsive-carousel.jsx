@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.css";
+
 const ResponsiveCarousel = ({ projects }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [expanded, setExpanded] = useState(false);
@@ -36,7 +37,13 @@ const ResponsiveCarousel = ({ projects }) => {
       {projects.map((project, index) => (
         <div key={index} className="carousel-card">
           <div className="cards">
-            <img src={project.image} alt="Project SS" className="project-img" />
+            <div className="card-image">
+              <img
+                src={project.image}
+                alt="Project SS"
+                className="project-img"
+              />
+            </div>
             <h2 className="project-title">{project.title}</h2>
             <p className="project-description">{project.description}</p>
             {expanded && <p className="project-details">{project.details}</p>}

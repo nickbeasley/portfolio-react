@@ -1,11 +1,10 @@
 import ChatAppPhoto from "../images/ChatAppSS.png";
-import MeetAppPhoto from "../images/MeetAppSS.png";
-//import ToDoListPhoto from "../images/ToDoListSS.png";
+import MeetAppPhoto from "../images/MeetAppSS2.png";
 import PokedexPhoto from "../images/PokedexSS.png";
-import NixFlixPhoto from "../images/NixFlixSS.png";
+import NixFlixPhoto from "../images/NixFlixSS2.png";
 import NixFlixServerPhoto from "../images/NixFlixServerSS.png";
 import PortfolioPhoto from "../images/PortfolioSS.png";
-import NixFlixAngularPhoto from "../images/NixFlixAngularSS.png";
+import NixFlixAngularPhoto from "../images/NixFlixAngularSS3.png";
 
 const projects = [
   {

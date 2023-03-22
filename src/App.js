@@ -2,7 +2,7 @@ import "./App.css";
 import MainView from "./components/main-view/main-view";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
-import image from "./images/bg1.svg";
+import image from "./images/hexagon.svg";
 
 function App() {
   return (
