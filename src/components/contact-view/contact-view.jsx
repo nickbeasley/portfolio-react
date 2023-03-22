@@ -47,13 +47,16 @@ class ContactView extends React.Component {
               <ul></ul>
               <li>
                 Email:{" "}
-                <a href="mailto:nickbeas2010@gmail.com">
+                <a href="mailto:nickbeas2010@gmail.com" target={"blank"}>
                   nickbeas2010@gmail.com
                 </a>
               </li>
               <li>
                 LinkedIn:{" "}
-                <a href="https://www.linkedin.com/in/nicholas-beasley-5b1b3b1b3/">
+                <a
+                  href="https://www.linkedin.com/in/nicholas-beasley-4a8768ab/"
+                  target={"blank"}
+                >
                   LinkedIn
                 </a>
               </li>
