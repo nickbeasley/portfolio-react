@@ -9,7 +9,19 @@ import NixFlixAngularPhoto from "../images/NixFlixAngularSS.png";
 
 const projects = [
   {
-    number: "1/7",
+    title: "Portfolio",
+    description:
+      "This is the site that you are currently looking at. It was made to replace the original portfolio site written in plain HTML and CSS. This site created using React is much more advanced.",
+    image: PortfolioPhoto,
+    codeLink: "https://github.com/nickbeasley/portfolio-react.git",
+    demoLink: "",
+    details: `This is a React-based front-end portfolio website. 
+      It's customized styling using CSS and CSS framework Bootstrap. 
+      It uses React features like props, state, and hooks to manage and display data dynamically.
+      It uses React Router to create a multi-page website 
+       along with of version control tool, GitHub, for project management and collaboration.`,
+  },
+  {
     title: "Chat App",
     description:
       "A JavaScript chat app built with ReactNative, featuring advanced functionality such as offline storage or geolocation.",
@@ -24,7 +36,6 @@ const projects = [
       The chat interface and functionality was created using the Gifted Chat library and the app's codebase will contain comments.`,
   },
   {
-    number: "2/7",
     title: "Meet App",
     description:
       "I built this app as part of a Web Development course with CareerFoundry. It really helped me to better understand React, Test Driven Development, serverless functions, and OAuth2 authentication.",
@@ -38,47 +49,8 @@ const projects = [
       Utilized TDD approach to ensure high-quality code and adequate test coverage
       Improved user experience and performance through implementation of PWA features`,
   },
-  // {
-  //   title: "To Do List",
-  //   description: "This is a small web application made using jQuery.",
-  //   image: ToDoListPhoto,
-  //   codeLink: "https://github.com/nickbeasley/to-do-list-jQuery.git",
-  //   demoLink: "https://nickbeasley.github.io/to-do-list-jQuery/",
-  //   details: `The user can add a new item to a list of items.
-  //     The user can cross out an item from the list of items.
-  //     The user can delete an item from the list of items.
-  //     The user can change the order of items in the list of items.`,
-  // },
+
   {
-    number: "3/7",
-    title: "Pokedex",
-    description:
-      "A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.",
-    image: PokedexPhoto,
-    codeLink: "https://github.com/nickbeasley/Pokedex.NKB.git",
-    demoLink: "https://nickbeasley.github.io/Pokedex.NKB/",
-    details: `Users are able to view a list of data and see more details for a given data item on demand.
-      The purpose of the project is to build a complete, fully functioning JavaScript web application.
-      This app is relying on an external data source.
-      The app not only works, but is also aesthetically pleasing and easy to use.
-      The project aims to showcase my ability to create the architecture of a JavaScript app, as well as how I test and debug my code.`,
-  },
-  {
-    number: "4/7",
-    title: "NixFlix React",
-    description: "A client-side frontend for a RESTful API, built with React.",
-    image: NixFlixPhoto,
-    codeLink: "https://github.com/nickbeasley/myFlix-client.git",
-    demoLink: "https://nixflix-client.netlify.app",
-    details: `I used React to build the client-side for an app called NixFlix based on its existing server-side code (REST API and database).
-      I created the interface for the NixFlix app that users can use to make requests to and receive responses from the server-side.
-      It considers the readability and maintenance of the codebase, and the design and usability of the app.
-      A complete web app that demonstrates mastery of full-stack JavaScript development using the MERN (MongoDB, Express, React, and Node.js) stack.
-      The app will be hosted online, be responsive and can be used anywhere and on any device, giving all users the same experience.
-      Movie enthusiasts will have access to information about different movies, be able to save a list of their favorite movies and access it whenever they want to.`,
-  },
-  {
-    number: "5/7",
     title: "NixFlix Server",
     description:
       "Server side code is A RESTful API coded from scratch using Node.js.",
@@ -93,21 +65,19 @@ const projects = [
       Movie enthusiasts have access to information about different movies, directors, and genres and be able to save data about their favorite movies.`,
   },
   {
-    number: "6/7",
-    title: "Portfolio",
-    description:
-      "This is the site that you are currently looking at. It was made to replace the original portfolio site written in plain HTML and CSS. This site created using React is much more advanced.",
-    image: PortfolioPhoto,
-    codeLink: "https://github.com/nickbeasley/portfolio-react.git",
-    demoLink: "",
-    details: `This is a React-based front-end portfolio website. 
-      It's customized styling using CSS and CSS framework Bootstrap. 
-      It uses React features like props, state, and hooks to manage and display data dynamically.
-      It uses React Router to create a multi-page website 
-       along with of version control tool, GitHub, for project management and collaboration.`,
+    title: "NixFlix React",
+    description: "A client-side frontend for a RESTful API, built with React.",
+    image: NixFlixPhoto,
+    codeLink: "https://github.com/nickbeasley/myFlix-client.git",
+    demoLink: "https://nixflix-client.netlify.app",
+    details: `I used React to build the client-side for an app called NixFlix based on its existing server-side code (REST API and database).
+      I created the interface for the NixFlix app that users can use to make requests to and receive responses from the server-side.
+      It considers the readability and maintenance of the codebase, and the design and usability of the app.
+      A complete web app that demonstrates mastery of full-stack JavaScript development using the MERN (MongoDB, Express, React, and Node.js) stack.
+      The app will be hosted online, be responsive and can be used anywhere and on any device, giving all users the same experience.
+      Movie enthusiasts will have access to information about different movies, be able to save a list of their favorite movies and access it whenever they want to.`,
   },
   {
-    number: "7/7",
     title: "NixFlix Angular",
     description:
       "Using Angular, I built the client-side for NixFlix based on its existing server-side code (REST API and database), with supporting documentation.",
@@ -118,6 +88,19 @@ const projects = [
       The app should display a welcome view where users will be able to either log in or register an account.
       The app was designed to be responsive using Angular Materail.
       The application's codebase contains comments using Typedoc.`,
+  },
+  {
+    title: "Pokedex",
+    description:
+      "A small web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of data points in detail.",
+    image: PokedexPhoto,
+    codeLink: "https://github.com/nickbeasley/Pokedex.NKB.git",
+    demoLink: "https://nickbeasley.github.io/Pokedex.NKB/",
+    details: `Users are able to view a list of data and see more details for a given data item on demand.
+      The purpose of the project is to build a complete, fully functioning JavaScript web application.
+      This app is relying on an external data source.
+      The app not only works, but is also aesthetically pleasing and easy to use.
+      The project aims to showcase my ability to create the architecture of a JavaScript app, as well as how I test and debug my code.`,
   },
 ];
 export default projects;
