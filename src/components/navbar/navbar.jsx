@@ -58,17 +58,6 @@ function Menu(props) {
             </Nav.Link>
           </Navbar.Brand>
 
-          {/* <Navbar.Brand className="navbar-item">
-            <Nav.Link
-              onClick={() => {
-                setExpanded(false);
-              }}
-              to="/work"
-              as={Link}
-            >
-              Work
-            </Nav.Link>
-          </Navbar.Brand> */}
           <Navbar.Brand className="navbar-item">
             <Nav.Link
               onClick={() => {
