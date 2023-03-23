@@ -63,7 +63,7 @@ class ContactView extends React.Component {
               <li>Web Form:</li>
               <label className="contact-form__label" hidden={true}></label>
               <label
-                for="contact-name"
+                htmlFor="contact-name"
                 className="contact-form__label"
                 hidden={true}
               ></label>
@@ -76,7 +76,7 @@ class ContactView extends React.Component {
                 onChange={this.handleChange}
               />{" "}
               <label
-                for="contact-email"
+                htmlFor="contact-email"
                 className="contact-form__label"
                 hidden={true}
               ></label>{" "}
@@ -91,7 +91,7 @@ class ContactView extends React.Component {
                 onChange={this.handleChange}
               />{" "}
               <label
-                for="contact-message"
+                htmlFor="contact-message"
                 className="contact-form__label"
                 hidden={true}
               ></label>
