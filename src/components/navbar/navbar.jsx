@@ -22,7 +22,7 @@ function Menu(props) {
         onClick={() => setExpanded(expanded ? false : "expanded")}
         aria-controls="responsive-navbar-nav"
       />
-      <Navbar.Collapse id="resposive-navbar-nav">
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Navbar.Brand className="navbar-item">
             <Nav.Link
