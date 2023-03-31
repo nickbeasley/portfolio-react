@@ -17,7 +17,6 @@ class ContactView extends React.Component {
     };
   }
   handleSubmit = (e) => {
-    console.log(this.state);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -32,7 +31,6 @@ class ContactView extends React.Component {
     const { name, email, message } = this.state;
     return (
       <Container>
-        {/* <h1 className="contact-title">Get in touch</h1> */}
         <div className="contact-form">
           <form
             onSubmit={this.handleSubmit}
