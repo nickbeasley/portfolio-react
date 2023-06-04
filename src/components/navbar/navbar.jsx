@@ -6,7 +6,6 @@ import "./navbar.css";
 
 function Menu(props) {
   const [expanded, setExpanded] = useState(false);
-
   return (
     <Navbar
       expanded={expanded}
@@ -55,6 +54,18 @@ function Menu(props) {
               as={Link}
             >
               Projects
+            </Nav.Link>
+          </Navbar.Brand>
+
+          <Navbar.Brand className="navbar-item">
+            <Nav.Link
+              onClick={() => {
+                setExpanded(false);
+              }}
+              to="/certifications"
+              as={Link}
+            >
+              Certifications
             </Nav.Link>
           </Navbar.Brand>
 

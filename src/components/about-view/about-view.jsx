@@ -1,6 +1,6 @@
 import React from "react";
 import "./about-view.css";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/Resume6.2.pdf";
 import htmlLogo from "../../images/html5.svg";
 import cssLogo from "../../images/css3.svg";
 import jsLogo from "../../images/javascript.svg";
@@ -146,6 +146,9 @@ function AboutView() {
           <figcaption>Yarn</figcaption>
         </figure>
       </div>{" "}
+      <a href={Resume} target="_blank" rel="noreferrer">
+        <button className="cv-button">Open Resume</button>
+      </a>
       <a href={Resume} download>
         <button className="cv-button">Download Resume</button>
       </a>
