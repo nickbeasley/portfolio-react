@@ -1,11 +1,17 @@
 import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { ReactComponent as Logo } from "../../images/nkblogoblue.svg";
 import "./navbar.css";
 
-function Menu(props) {
+function Menu() {
   const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
+
+  const handleNavItemClick = () => {
+    setExpanded(false);
+  };
+
   return (
     <Navbar
       expanded={expanded}
@@ -18,68 +24,56 @@ function Menu(props) {
         <Logo className="logo" />
       </Navbar.Brand>
       <Navbar.Toggle
-        onClick={() => setExpanded(expanded ? false : "expanded")}
+        onClick={() => setExpanded(!expanded)}
         aria-controls="responsive-navbar-nav"
       />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ml-auto">
-          <Navbar.Brand className="navbar-item">
-            <Nav.Link
-              onClick={() => {
-                setExpanded(false);
-              }}
-              to="/"
-              as={Link}
-            >
-              About
-            </Nav.Link>
-          </Navbar.Brand>
-          <Navbar.Brand className="navbar-item">
-            <Nav.Link
-              onClick={() => {
-                setExpanded(false);
-              }}
-              to="/about"
-              as={Link}
-            >
-              Tech Skills
-            </Nav.Link>
-          </Navbar.Brand>
-          <Navbar.Brand className="navbar-item">
-            <Nav.Link
-              onClick={() => {
-                setExpanded(false);
-              }}
-              to="/projects"
-              as={Link}
-            >
-              Projects
-            </Nav.Link>
-          </Navbar.Brand>
-
-          <Navbar.Brand className="navbar-item">
-            <Nav.Link
-              onClick={() => {
-                setExpanded(false);
-              }}
-              to="/certifications"
-              as={Link}
-            >
-              Certifications
-            </Nav.Link>
-          </Navbar.Brand>
-
-          <Navbar.Brand className="navbar-item">
-            <Nav.Link
-              onClick={() => {
-                setExpanded(false);
-              }}
-              to="/contact"
-              as={Link}
-            >
-              Contact
-            </Nav.Link>
-          </Navbar.Brand>
+        <Nav activeKey={location.pathname} className="ml-auto">
+          <Nav.Link
+            onClick={handleNavItemClick}
+            to="/"
+            as={Link}
+            eventKey="/"
+            className="navbar-item"
+          >
+            About
+          </Nav.Link>
+          <Nav.Link
+            onClick={handleNavItemClick}
+            to="/about"
+            as={Link}
+            eventKey="/about"
+            className="navbar-item"
+          >
+            Tech Skills
+          </Nav.Link>
+          <Nav.Link
+            onClick={handleNavItemClick}
+            to="/projects"
+            as={Link}
+            eventKey="/projects"
+            className="navbar-item"
+          >
+            Projects
+          </Nav.Link>
+          <Nav.Link
+            onClick={handleNavItemClick}
+            to="/certifications"
+            as={Link}
+            eventKey="/certifications"
+            className="navbar-item"
+          >
+            Certifications
+          </Nav.Link>
+          <Nav.Link
+            onClick={handleNavItemClick}
+            to="/contact"
+            as={Link}
+            eventKey="/contact"
+            className="navbar-item"
+          >
+            Contact
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
