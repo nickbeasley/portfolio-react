@@ -1,6 +1,6 @@
 import React from "react";
 import "./about-view.css";
-import Resume from "../../assets/ResumeG3.pdf";
+import Resume from "../../assets/Resume01.pdf";
 
 import { skillLogos } from "../logos/logos";
 
