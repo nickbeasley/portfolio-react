@@ -8,7 +8,7 @@ function Footer() {
       <Row className="justify-content-center footer">
         <Col xs="auto" className="text-center">
           <a
-            href="https://www.linkedin.com/in/nicholas-beasley-4a8768ab/"
+            href="https://www.linkedin.com/in/nicholas-beasley"
             target="_blank"
             rel="noopener noreferrer"
           >
